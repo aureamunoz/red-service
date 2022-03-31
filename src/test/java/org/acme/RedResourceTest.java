@@ -12,7 +12,7 @@ public class RedResourceTest {
     @Test
     public void testHelloEndpoint() {
         given()
-          .when().get("/red")
+          .when().get("/color")
           .then()
              .statusCode(200)
              .body(is("Hello from Red!"));

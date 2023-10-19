@@ -11,11 +11,7 @@ public class RedResourceTest {
 
     @Test
     public void testHelloEndpoint() {
-        given()
-          .when().get("")
-          .then()
-             .statusCode(200)
-             .body(is("Hello from Red!"));
+        given().when().get("").then().statusCode(200).body(is("Hello from Red!"));
     }
 
 }
